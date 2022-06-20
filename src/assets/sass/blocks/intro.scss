@@ -1,0 +1,15 @@
+.intro {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100vh;
+
+    color: $white;
+    text-align: center;
+}
+
+.intro__title {
+    font-size: 30rem;
+    font-weight: 700;
+    text-transform: uppercase;
+}
