@@ -1,47 +1,8 @@
 .about {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    height: 100vh;
 
-    color: $white;
     text-align: center;
-}
-
-.about__title {
-    display: flex;
-    margin: 0 auto;
-    font-size: 12.8rem;
-    font-weight: 700;
-    text-transform: uppercase;
-
-    position: relative;
-
-    &:before,
-    &:after {
-        content: "";
-        width: 5rem;
-        height: 5rem;
-
-        background-size: 4rem 4rem;
-        background-image: url(../img/star.svg);
-        background-position: center;
-        background-repeat: no-repeat;
-
-        position: absolute;
-        top: 50%;
-        z-index: 1;
-    }
-
-    &:before {
-        transform: translateX(-200%) translateY(-50%);
-        left: 0;
-    }
-
-    &:after {
-        transform: translateX(200%) translateY(-50%);
-        right: 0;
-    }
 }
 
 .about__text {

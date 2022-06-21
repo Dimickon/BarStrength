@@ -1,0 +1,49 @@
+.section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    min-height: 100vh;
+}
+
+.section__title {
+    font-size: 12.8rem;
+    font-weight: 700;
+    text-transform: uppercase;
+
+    &--about {
+        display: flex;
+        margin: 0 auto 9rem;
+        position: relative;
+
+        &:before,
+        &:after {
+            content: "";
+            width: 5rem;
+            height: 5rem;
+
+            background-size: 4rem 4rem;
+            background-image: url(../img/star.svg);
+            background-position: center;
+            background-repeat: no-repeat;
+
+            position: absolute;
+            top: 50%;
+            z-index: 1;
+        }
+
+        &:before {
+            transform: translateX(-200%) translateY(-50%);
+            left: 0;
+        }
+
+        &:after {
+            transform: translateX(200%) translateY(-50%);
+            right: 0;
+        }
+    }
+
+    &--reservation {
+        margin-bottom: 21rem;
+    }
+}

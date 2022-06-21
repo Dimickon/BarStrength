@@ -14,11 +14,14 @@ html {
 
 body {
     font-family: Montserrat, sans-serif;
+    color: $white;
     background-color: $black;
 }
 
 @import "blocks/header";
 @import "blocks/container";
+@import "blocks/section";
 @import "blocks/intro";
 @import "blocks/about";
+@import "blocks/reservation";
 @import "blocks/footer";
