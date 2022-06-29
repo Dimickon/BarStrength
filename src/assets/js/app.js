@@ -3,4 +3,8 @@ $(document).ready(function() {
         direction: 'horizontal',
         loop: true,
     });
+
+    $(document).on("textarea", function(){
+       $(this).outerHeight(38).outerHeight(this.scrollHeight);
+    });
 });

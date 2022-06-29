@@ -18,6 +18,13 @@ body {
     background-color: $black;
 }
 
+img {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
 @import "blocks/header";
 @import "blocks/container";
 @import "blocks/section";
@@ -28,5 +35,9 @@ body {
 @import "blocks/location";
 @import "blocks/reservation";
 @import "blocks/agreement";
+@import "blocks/attention";
+@import "blocks/menu";
+@import "blocks/events";
+@import "blocks/feedback";
 @import "blocks/footer";
 @import "blocks/animation";

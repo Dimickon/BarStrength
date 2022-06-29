@@ -1,5 +1,5 @@
 .footer {
-    padding: 13rem 0;
+    padding: 13rem 0 7.5rem;
 }
 
 .footer__inner {
@@ -28,7 +28,14 @@
     }
 }
 
+.footer__media-list {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 0 .5rem;
+}
+
 .footer__media-item {
+    width: 2.4rem;
     text-decoration: none;
 
     transition: opacity .2s linear;
