@@ -3,7 +3,199 @@
 }
 
 .intro__title {
-    font-size: 30rem;
+    font-size: 10rem;
     font-weight: 700;
     text-transform: uppercase;
+    animation: glow 1s ease-in-out infinite alternate;
 }
+
+.intro__list {
+    font-size: 2.4rem;
+    font-weight: 500;
+
+    &-item {
+        color: $white;
+        text-decoration: none;
+
+        transition: font-size .2s linear;
+        position: absolute;
+        transform: translateX(-50%) translateY(-50%);
+
+
+        &:hover {
+            font-size: 3rem;
+        }
+
+        &:nth-child(1) {
+            left: 50%;
+            top: 10%;
+        }
+
+        &:nth-child(2) {
+            left: 80%;
+            top: 15%;
+        }
+
+        &:nth-child(3) {
+            left: 80%;
+            top: 85%;
+        }
+
+        &:nth-child(4) {
+            left: 65%;
+            top: 80%;
+        }
+
+        &:nth-child(5) {
+            left: 40%;
+            top: 90%;
+        }
+
+        &:nth-child(6) {
+            left: 20%;
+            top: 80%;
+        }
+
+        &:nth-child(7) {
+            left: 20%;
+            top: 20%;
+        }
+    }
+}
+
+.intro__stars {
+    &-item {
+        display: block;
+        width: 5rem;
+        height: 5rem;
+
+        background: url(../img/intro/star.svg);
+        background-repeat: no-repeat;
+        background-size: 5rem auto;
+
+        position: absolute;
+        transform: translateX(-50%) translateY(-50%);
+
+        &:nth-child(1) {
+            left: 10%;
+            top: 10%;
+        }
+
+        &:nth-child(2) {
+            background-size: 3.7rem auto;
+            right: 10%;
+            top: 7%;
+        }
+
+        &:nth-child(3) {
+            background-size: 2.3rem auto;
+            right: 5%;
+            top: 40%;
+        }
+
+        &:nth-child(4) {
+            background-size: 2.3rem auto;
+            left: 20%;
+            bottom: 5%;
+        }
+    }
+}
+
+.intro__glare {
+    &-item {
+        display: block;
+        width: 4.4rem;
+        height: 6.3rem;
+
+        background: url(../img/intro/glare.svg);
+        background-repeat: no-repeat;
+        background-size: 4.4rem auto;
+
+        position: absolute;
+        transform: translateX(-50%) translateY(-50%);
+
+        &:nth-child(1) {
+            left: 7%;
+            top: 60%;
+        }
+
+        &:nth-child(2) {
+            background-size: 2.1rem auto;
+            top: 70%;
+            left: 5%;
+        }
+    }
+}
+
+.intro__points {
+    &-item {
+        display: block;
+        width: 1.6rem;
+        height: 1.6rem;
+
+        background: url(../img/intro/point.svg);
+        background-repeat: no-repeat;
+        background-size: 100% auto;
+        background-position: center;
+
+        position: absolute;
+        transform: translateX(-50%) translateY(-50%);
+
+        &:nth-child(1) {
+            top: 8.5%;
+            left: 60%;
+        }
+
+        &:nth-child(2) {
+            background-size: .8rem auto;
+            top: 12%;
+            left: 63%;
+        }
+
+        &:nth-child(3) {
+            top: 95%;
+            right: 5%;
+        }
+
+        &:nth-child(4) {
+            background-size: .8rem auto;
+            top: 90%;
+            left: 75%;
+        }
+
+        &:nth-child(5) {
+            background-size: .8rem auto;
+            top: 85%;
+            left: 50%;
+        }
+
+        &:nth-child(6) {
+            background-size: .5rem auto;
+            top: 98%;
+            left: 28%;
+        }
+
+        &:nth-child(7) {
+            background-size: .8rem auto;
+            top: 16%;
+            left: 35%;
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

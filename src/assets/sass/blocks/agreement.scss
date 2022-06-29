@@ -1,0 +1,49 @@
+.agreement__content {
+    margin: 0 auto;
+    padding: 7rem 6.5rem;
+    max-width: 70rem;
+    background-color: $white;
+    color: $black;
+}
+
+.agreement__title {
+    margin-bottom: 28rem;
+    font-size: 8rem;
+    font-weight: 700;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.agreement__text {
+    margin-bottom: 3rem;
+    font-size: 1.8rem;
+    font-weight: 600;
+}
+
+.agreement__checkbox {
+    display: flex;
+    margin-bottom: 32rem;
+    align-items: center;
+    font-size: 1.5rem;
+    font-weight: 600;
+
+    input {
+        margin-right: 1rem;
+        width: 2.5rem;
+        height: 2.5rem;
+    }
+}
+
+.agreement__footer {
+    display: flex;
+    justify-content: center;
+}
+
+.agreement__footer-item {
+    padding: 0 1rem;
+    img {
+        width: 1rem;
+        height: 1rem;
+        fill: $black;
+    }
+}

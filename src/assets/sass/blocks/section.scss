@@ -1,15 +1,33 @@
 .section {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
 
-    min-height: 100vh;
+    &--full {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        min-height: 100vh;
+
+        position: relative;
+    }
+
+    &--reservation {
+        margin-top: 33rem;
+    }
+
+    &--agreement {
+        padding: 5rem 0;
+    }
 }
 
 .section__title {
     font-size: 12.8rem;
     font-weight: 700;
     text-transform: uppercase;
+
+    z-index: 2;
+    &--intro {
+        font-size: 10rem;
+    }
 
     &--about {
         display: flex;
@@ -45,5 +63,12 @@
 
     &--reservation {
         margin-bottom: 21rem;
+    }
+
+    &--location {
+        position: absolute;
+        left: 0;
+        top: 0;
+        z-index: 2;
     }
 }

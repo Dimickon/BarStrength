@@ -1,0 +1,30 @@
+.room__info {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+}
+
+.room__text {
+    margin-top: 6rem;
+    max-width: 66.6rem;
+    font-size: 2.2rem;
+    font-weight: 400;
+}
+
+.room__slider {
+    padding-top: 7rem;
+    width: 100%;
+    height: auto;
+}
+
+.room__slide-item {
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+}
