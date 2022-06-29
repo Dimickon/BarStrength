@@ -12,6 +12,21 @@
     max-width: 70rem;
     font-size: 2.4rem;
     font-weight: 500;
+
+    @include breakpoint($medium-bp) {
+        max-width: 120rem;
+        font-size: 5rem;
+    }
+
+    @include breakpoint($tablet-bp) {
+        max-width: 100rem;
+        font-size: 4rem;
+    }
+
+    @include breakpoint($mobile-bp) {
+        max-width: none;
+        font-size: 3rem;
+    }
 }
 
 .attention__link {

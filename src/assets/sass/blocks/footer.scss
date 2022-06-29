@@ -9,6 +9,11 @@
 
     font-size: 2.2rem;
     font-weight: 600;
+
+    @include breakpoint($tablet-bp) {
+        grid-gap: 5.5rem;
+        grid-template-columns: repeat(2, auto);
+    }
 }
 
 .footer__category {
@@ -32,6 +37,10 @@
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-gap: 0 .5rem;
+
+    @include breakpoint($medium-bp) {
+        grid-gap: 0 1rem;
+    }
 }
 
 .footer__media-item {
@@ -42,5 +51,9 @@
 
     &:hover {
         opacity: 0.7;
+    }
+
+    @include breakpoint($medium-bp) {
+        width: 4.8rem;
     }
 }

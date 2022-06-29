@@ -1,36 +1,48 @@
+.agreement {
+    @include breakpoint($tablet-bp) {
+        padding: 0 2rem;
+    }
+}
+
 .agreement__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     margin: 0 auto;
     padding: 7rem 6.5rem;
-    max-width: 70rem;
+    max-width: 700px;
+    min-height: 90vh;
     background-color: $white;
     color: $black;
 }
 
 .agreement__title {
-    margin-bottom: 28rem;
-    font-size: 8rem;
+    font-size: 70px;
     font-weight: 700;
     text-align: center;
     text-transform: uppercase;
+
+    @include breakpoint($tablet-bp) {
+        font-size: 50px;
+    }
 }
 
 .agreement__text {
-    margin-bottom: 3rem;
-    font-size: 1.8rem;
+    margin-bottom: 30px;
+    font-size: 18px;
     font-weight: 600;
 }
 
 .agreement__checkbox {
     display: flex;
-    margin-bottom: 32rem;
     align-items: center;
-    font-size: 1.5rem;
+    font-size: 15px;
     font-weight: 600;
 
     input {
         margin-right: 1rem;
-        width: 2.5rem;
-        height: 2.5rem;
+        width: 25px;
+        height: 25px;
     }
 }
 
@@ -42,7 +54,7 @@
 .agreement__footer-item {
     padding: 0 1rem;
     img {
-        width: 1rem;
-        height: 1rem;
+        width: 20px;
+        height: 20px;
     }
 }

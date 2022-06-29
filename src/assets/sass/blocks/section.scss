@@ -31,6 +31,10 @@
     font-weight: 700;
     text-transform: uppercase;
 
+    @include breakpoint($tablet-bp) {
+        font-size: 7rem;
+    }
+
     z-index: 2;
     &--intro {
         font-size: 10rem;
@@ -69,7 +73,11 @@
     }
 
     &--reservation {
-        margin-bottom: 21rem;
+        margin-bottom: 15rem;
+
+        @include breakpoint($tablet-bp) {
+            margin-bottom: 10rem;
+        }
     }
 
     &--location {
@@ -81,20 +89,38 @@
 
     &--menu {
         margin-bottom: 22rem;
+        width: 100%;
         text-align: center;
+    }
+
+    &--attention {
+        @include breakpoint($tablet-bp) {
+            font-size: 9rem;
+        }
     }
 
     &--events,
     &--feedback {
         margin-bottom: 8rem;
         text-align: center;
-        position: relative;
+    }
 
+    /* Glow effects */
+
+    &--events,
+    &--feedback,
+    &--menu,
+    &--reservation,
+    &--location,
+    &--room,
+    &--intro {
+        display: inline-block;
+        position: relative;
         &:after {
+            opacity: .5;
             content: "";
             width: 100%;
             height: 400%;
-            background: url(../img/glow/8.png);
             background-position: center;
             background-repeat: no-repeat;
             background-size: 100% auto;
@@ -103,6 +129,30 @@
             top: 0;
             left: 50%;
             transform: translateX(-50%) translateY(-40%);
+        }
+    }
+
+    &--intro {
+        &:after {
+            background-image: url(../img/glow/green2.png);
+        }
+    }
+
+    &--room {
+        &:after {
+            background-image: url(../img/glow/yellow.png);
+        }
+    }
+
+    &--location {
+        &:after {
+            background-image: url(../img/glow/purple.png);
+        }
+    }
+
+    &--reservation {
+        &:after {
+            background-image: url(../img/glow/green.png);
         }
     }
 }

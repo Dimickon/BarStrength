@@ -13,6 +13,13 @@
             padding: 0 3rem;
         }
     }
+
+    @include breakpoint($tablet-bp) {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-gap: 2rem;
+        text-align: center;
+    }
 }
 
 .marquee__item {

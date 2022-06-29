@@ -4,6 +4,14 @@
     grid-template-columns: 1fr 2fr 1fr 1fr;
 
     max-width: 110rem;
+
+    @include breakpoint($tablet-bp) {
+        max-width: 190rem;
+    }
+
+    @include breakpoint($tablet-bp) {
+        grid-template-columns: 1fr;
+    }
 }
 
 .reservation__list-item {
@@ -18,6 +26,16 @@
         background-color: transparent;
         border: 1px $white solid;
         border-radius: 30px;
+
+        @include breakpoint($tablet-bp) {
+            font-size: 3rem;
+        }
+    }
+
+    input[type="time"]::-webkit-calendar-picker-indicator {
+        background-image: url(../img/reservation/time.svg);
+        background-repeat: no-repeat;
+        opacity: .4;
     }
 
     input[type="date"]::-webkit-calendar-picker-indicator {
