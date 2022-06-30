@@ -4,6 +4,16 @@
     position: relative;
 }
 
+.cube__img {
+    display: flex;
+    justify-content: center;
+    img {
+        @include breakpoint($tablet-bp) {
+            width: 170%;
+        }
+    }
+}
+
 .cube__text {
     padding: 2rem 7rem;
     font-size: 3rem;
@@ -37,5 +47,10 @@
         transform: translateX(-50%) translateY(-50%);
         top: 50%;
         left: 0;
+    }
+
+    @include breakpoint($tablet-bp) {
+        padding: 2rem;
+        font-size: 2rem;
     }
 }

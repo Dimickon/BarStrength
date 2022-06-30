@@ -180,7 +180,6 @@ body.no-scroll {
 
 img {
     width: 100%;
-    max-width: 100%;
     height: auto;
     object-fit: cover;
 }
@@ -194,6 +193,10 @@ img {
     padding: 0 1rem;
     max-width: 155rem;
     position: relative;
+}
+
+.section {
+    overflow: hidden;
 }
 
 .section--full, .section--menu, .section--feedback, .section--cube {
@@ -1049,6 +1052,17 @@ img {
     position: relative;
 }
 
+.cube__img {
+    display: flex;
+    justify-content: center;
+}
+
+@media (max-width: 1024px) {
+    .cube__img img {
+        width: 170%;
+    }
+}
+
 .cube__text {
     padding: 2rem 7rem;
     font-size: 3rem;
@@ -1081,6 +1095,13 @@ img {
     transform: translateX(-50%) translateY(-50%);
     top: 50%;
     left: 0;
+}
+
+@media (max-width: 1024px) {
+    .cube__text {
+        padding: 2rem;
+        font-size: 2rem;
+    }
 }
 
 .footer {
