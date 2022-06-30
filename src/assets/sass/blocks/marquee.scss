@@ -9,7 +9,7 @@
 
         transform: translateX(-150%);
 
-        transition: transform 1s linear;
+        transition: transform 10s linear;
 
         position: absolute;
         top: 0;
@@ -74,27 +74,7 @@
         text-transform: uppercase;
     }
 
-    &--easteregg {
-
-        &:hover {
-            .cube {
-                transform: translateX(0);
-            }
-        }
-    }
 }
-
-.marquee__item--easteregg {
-
-    a {
-        &:hover {
-            .cube {
-                transform: translateX(0);
-            }
-        }
-    }
-}
-
 
 
 

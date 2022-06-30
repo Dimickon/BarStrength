@@ -31,6 +31,7 @@
     font-size: 12.8rem;
     font-weight: 700;
     text-transform: uppercase;
+    font-family: 'Bebas';
 
     @include breakpoint($tablet-bp) {
         font-size: 7rem;
@@ -38,7 +39,7 @@
 
     z-index: 2;
     &--intro {
-        font-size: 10rem;
+        font-size: 30rem;
     }
 
     &--about {
