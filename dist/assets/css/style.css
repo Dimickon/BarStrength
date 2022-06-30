@@ -559,6 +559,48 @@ img {
     object-fit: cover;
 }
 
+.moreinfo {
+    display: -ms-flexbox;
+    display: flex;
+}
+
+.moreinfo__photo {
+    width: 50% !important;
+    height: auto;
+}
+
+.moreinfo__content {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    padding: 0 3rem;
+}
+
+.moreinfo__text {
+    margin-bottom: 3rem;
+    font-size: 2.4rem;
+}
+
+.moreinfo__link {
+    padding: 3rem 7rem;
+    font-size: 2rem;
+    color: #000;
+    text-decoration: none;
+    border-radius: 30px;
+    font-weight: 700;
+    background-color: #FFFFFF;
+}
+
+.moreinfo__link:hover {
+    cursor: pointer;
+    background-color: rgba(255, 255, 255, 0.9);
+}
+
 .marquee {
     padding: 30rem 0;
 }
