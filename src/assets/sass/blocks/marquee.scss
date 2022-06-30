@@ -1,5 +1,44 @@
 .marquee {
     padding: 30rem 0;
+    position: relative;
+
+    .cube {
+        display: flex;
+        align-items: center;
+        width: 50%;
+
+        transform: translateX(-150%);
+
+        transition: transform 1s linear;
+
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 1;
+
+        &:hover {
+            .cube__text {
+                opacity: 1;
+            }
+        }
+    }
+
+    .cube__text {
+        padding: 2rem 7rem;
+        font-size: 3rem;
+        border-radius: 30px;
+        border: 1px $white solid;
+        opacity: 0;
+
+        transition: opacity .5s linear;
+    }
+
+
+    &:hover {
+        .cube {
+            transform: translateX(-30%);
+        }
+    }
 }
 
 .marquee__content {
@@ -34,4 +73,31 @@
         text-decoration: none;
         text-transform: uppercase;
     }
+
+    &--easteregg {
+
+        &:hover {
+            .cube {
+                transform: translateX(0);
+            }
+        }
+    }
 }
+
+.marquee__item--easteregg {
+
+    a {
+        &:hover {
+            .cube {
+                transform: translateX(0);
+            }
+        }
+    }
+}
+
+
+
+
+
+
+

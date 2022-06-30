@@ -15,6 +15,14 @@ $(document).ready(function() {
         }
     });
 
+    /* Cube
+    =====================================*/
+    $("#cube").on("click", function () {
+        setTimeout(function() {
+            $('.cube__text').toggleClass('cube__text--show');
+        }, 1000);
+    });
+
 
     /* Smooth Scroll to sections
     =====================================*/
