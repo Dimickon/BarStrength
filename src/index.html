@@ -9,11 +9,11 @@ title: Бар Сила
         <div class="intro__list">
             <a href="menu.html" class="intro__list-item">Меню</a>
             <a href="feedback.html" class="intro__list-item">Обратная связь</a>
-            <a href="#" class="intro__list-item">Бронь</a>
-            <a href="#" class="intro__list-item">Игра</a>
-            <a href="#" class="intro__list-item">О нас</a>
-            <a href="#" class="intro__list-item">Контакты</a>
-            <a href="#" class="intro__list-item">Пространство</a>
+            <a href="#" class="intro__list-item" data-scroll="#reservation">Бронь</a>
+            <a href="https://kkpodyakova.github.io/Drink-Tarot-Game/" class="intro__list-item">Игра</a>
+            <a href="#" class="intro__list-item" data-scroll="#about">О нас</a>
+            <a href="#" class="intro__list-item" data-scroll="#footer">Контакты</a>
+            <a href="#" class="intro__list-item" data-scroll="#room">Пространство</a>
         </div>
 
         <div class="intro__stars">
@@ -41,7 +41,7 @@ title: Бар Сила
 </section>
 
 
-<section class="section section--full">
+<section class="section section--full" id="about">
     <div class="about">
         <h2 class="section__title section__title--about">О нас</h2>
         <p class="about__text">Бар Сила — это место, в котором вы можете попробовать волшебные напитки, которые наделят вас волшебной силой.</p>
@@ -49,7 +49,7 @@ title: Бар Сила
     </div>
 </section>
 
-<section class="room">
+<section class="room" id="room">
     <div class="container">
         <div class="room__info">
             <h2 class="section__title section__title--room">Пространство</h2>
@@ -120,7 +120,7 @@ title: Бар Сила
     <script src="http://api-maps.yandex.ru/2.1/?lang=ru_RU"></script>
 </section>
 
-<section class="section section--reservation">
+<section class="section section--reservation" id="reservation">
     <div class="container">
         <div class="reservation">
             <h2 class="section__title section__title--reservation">Бронь</h2>
@@ -145,7 +145,7 @@ title: Бар Сила
                     <input placeholder="Телефон" type="tel" required>
                 </form>
                 <form class="reservation__list-item">
-                    <input placeholder="Отправить" type="submit" required data-modal="#reservation">
+                    <input placeholder="Отправить" type="submit" required data-modal="#registration">
                 </form>
 
             </div>
@@ -154,7 +154,7 @@ title: Бар Сила
 </section>
 
 
-<div class="modal" id="reservation">
+<div class="modal" id="registration">
     <div class="modal__inner">
         <div class="modal__content">
             <div class="modal__text">Вы успешно записаны!<br>С нетерпением ждём Вас!</div>

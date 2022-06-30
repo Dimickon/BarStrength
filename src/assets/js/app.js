@@ -15,6 +15,23 @@ $(document).ready(function() {
         }
     });
 
+
+    /* Smooth Scroll to sections
+    =====================================*/
+
+    $("[data-scroll]").on("click", function(event) {
+        event.preventDefault();
+
+        let scrollEl = $(this).data("scroll");
+        let scrollElPos = $(scrollEl).offset().top;
+
+        $("html, body").animate({
+            scrollTop: scrollElPos
+        }, 500)
+    });
+
+
+
     /* Modal
     =====================================*/
 
