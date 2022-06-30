@@ -301,6 +301,7 @@ img {
 
 .section__title--events, .section__title--feedback, .section__title--menu, .section__title--reservation, .section__title--location, .section__title--room, .section__title--intro {
     display: inline-block;
+    pointer-events: none;
     position: relative;
 }
 

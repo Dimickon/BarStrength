@@ -12,6 +12,7 @@ $(document).ready(function() {
         if ($(this).is(":checked")) {
             window.location.href = 'index.html';
         } else {
+            window.location.href = 'index.html';
         }
     });
 

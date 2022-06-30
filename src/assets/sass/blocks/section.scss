@@ -117,6 +117,7 @@
     &--room,
     &--intro {
         display: inline-block;
+        pointer-events: none;
         position: relative;
         &:after {
             opacity: .5;
