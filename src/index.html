@@ -118,76 +118,51 @@ title: Бар Сила
         <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Ab6f4a5c2247e3e33a4646354a3e74ea4c8681a152a0a77711ce431072bff1fe8&amp;width=100%25&amp;height=720&amp;lang=ru_RU&amp;scroll=true"></script>
     </div>
     <script src="http://api-maps.yandex.ru/2.1/?lang=ru_RU"></script>
-    <script type="text/javascript">
-        ymaps.ready(init);
-        function init() {
-            var myMap = new ymaps.Map("map", {
-                // Координаты центра карты.
-                // Порядок по умолчанию: «широта, долгота».
-                // Чтобы не определять координаты центра карты вручную,
-                // воспользуйтесь инструментом Определение координат.
-                center: [55.762865, 37.590901],
-                // Уровень масштабирования. Допустимые значения:
-                // от 0 (весь мир) до 19.
-                zoom: 9
-            }),
-
-            myPlacemark = new ymaps.Placemark(myMap.getCenter(), {
-                hintContent: 'Собственный значок метки',
-                balloonContent: 'Это красивая метка'
-            }, {
-                // Опции.
-                // Необходимо указать данный тип макета.
-                iconLayout: 'default#image',
-                // Своё изображение иконки метки.
-                iconImageHref: 'assets/img/mapIcon.png',
-                // Размеры метки.
-                iconImageSize: [50, 50],
-                // Смещение левого верхнего угла иконки относительно
-                // её "ножки" (точки привязки).
-                iconImageOffset: [-5, -38]
-            }),
-            myMap.geoObjects.add(myPlacemark);
-        }
-    </script>
 </section>
 
 <section class="section section--reservation">
     <div class="container">
         <div class="reservation">
             <h2 class="section__title section__title--reservation">Бронь</h2>
-            <ul class="reservation__list">
-                <li class="reservation__list-item">
+            <div class="reservation__list">
+                <form class="reservation__list-item">
                     <input placeholder="Имя" type="text" required>
-                </li>
-                <li class="reservation__list-item">
+                </form>
+                <form class="reservation__list-item">
                     <input placeholder="Фамилия" type="text" required>
-                </li>
-                <li class="reservation__list-item">
+                </form>
+                <form class="reservation__list-item">
                     <input placeholder="Кол-во гостей" type="text">
-                </li>
-                <li></li>
-                <li class="reservation__list-item">
+                </form>
+                <div></div>
+                <form class="reservation__list-item">
                     <input placeholder="Время" type="time" required>
-                </li>
-                <li class="reservation__list-item">
+                </form>
+                <form class="reservation__list-item">
                     <input placeholder="Дата" type="date" required>
-                </li>
-                <li class="reservation__list-item">
+                </form>
+                <form class="reservation__list-item">
                     <input placeholder="Телефон" type="tel" required>
-                </li>
-                <li class="reservation__list-item">
-                    <input placeholder="Отправить" type="submit" required>
-                </li>
+                </form>
+                <form class="reservation__list-item">
+                    <input placeholder="Отправить" type="submit" required data-modal="#reservation">
+                </form>
 
-            </ul>
+            </div>
         </div>
     </div>
 </section>
 
 
 <div class="modal" id="reservation">
-
+    <div class="modal__inner">
+        <div class="modal__content">
+            <div class="modal__text">Вы успешно записаны!<br>С нетерпением ждём Вас!</div>
+        </div>
+        <button class="modal__close" type="button" data-modal-close>
+            <img src="assets/img/close.svg" alt="Close">
+        </button>
+    </div>
 </div>
 
 

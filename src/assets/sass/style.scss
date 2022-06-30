@@ -115,6 +115,10 @@ body {
     background-color: $black;
 }
 
+body.no-scroll {
+    overflow: hidden;
+}
+
 img {
     width: 100%;
     max-width: 100%;
@@ -131,6 +135,7 @@ img {
 @import "blocks/marquee";
 @import "blocks/location";
 @import "blocks/reservation";
+@import "blocks/modal";
 @import "blocks/agreement";
 @import "blocks/attention";
 @import "blocks/menu";
